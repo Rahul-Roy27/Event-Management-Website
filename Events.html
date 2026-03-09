@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body style="background-color:rgb(242, 246, 250);">
+    <header class="sticky-top">
+        <nav class="navbar bg-white">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="navbar-brand fw-bolder text-danger">
+                        <i class="fa-regular fa-calendar text-danger"></i>MyEvent
+                    </a>
+                    <h1 class="fw-lighter text-secondary text-opacity-50">|</h1>
+                    <i class="fa-solid fa-location-dot fs-3 text-danger"></i>
+                    <h2 class="fs-4">Delhi NCR</h2>
+                </div>
+
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black fw-semibold link-danger" aria-current="page"
+                            href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-semibold  link-danger" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-semibold link-danger" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link text-black fw-semibold border bg-danger link-danger text-white rounded-pill">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-semibold link-danger ">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-semibold link-danger ">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fw-semibold link-danger ">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search..."
+                        aria-label="Search" />
+
+                    <button class="btn rounded-pill btn-danger fw-bold shadow-sm" type="submit">Search</button>
+                    <a href="Login.html"><i class="fa-solid fa-bell fs-1 text-danger mx-1"></i></a>
+                    <a href="Profile.html"><i class="fa-solid fa-circle-user fs-1 text-danger me-3"></i></a>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="container-fluid p-2" style="background-color: #e0e0e05b;">
+            <div class="container-lg d-flex justify-content-between">
+                <div class="fw-semibold">
+                    <span class="mx-3 fw-semibold">Movies</span>
+                    <span class="mx-3 fw-semibold">Stream </span>
+                    <span class="mx-3 fw-semibold">Events</span>
+                    <span class="mx-3 fw-semibold">Sports</span>
+                    <span class="mx-3 fw-semibold">Activities</span>
+                </div>
+                <div>
+                    <span class="mx-3 fw-semibold">ListYourShow</span>
+                    <span class="mx-3 fw-semibold">Corporates</span>
+                    <span class="mx-3 fw-semibold">Offers</span>
+                    <span class="mx-3 fw-semibold">Gift Cards</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-lg  my-3 ">
+            <div class="row ">
+                <div class="col-md-2">
+                    <div>
+                        <h2 class="fw-bolder">Filters</h2>
+                        <div class="shadow-sm p-3 my-3 rounded-2  bg-white">
+                            <div class="d-flex justify-content-between">
+                                <div class="dropdown">
+                                    <button class="btn text-danger fs-5 dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Date
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <p class="fs-5">Clear</p>
+                            </div>
+                            <div class="text-danger border text-center fs-5 fw-semibold p-2 mb-1">Today</div>
+                            <div class="text-danger border text-center fs-5 fw-semibold p-2 mb-1">Tomorrow</div>
+                            <div class="text-danger border text-center fs-5 fw-semibold p-2 mb-1">This Weekend</div>
+                            <input type="checkbox" name="" id=""><span class="fs-5 mx-2">Date Range</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="d-flex justify-content-between align-items-center shadow-sm my-2 border w-100 bg-white py-1 mb-3 rounded-2">
+                        <div class="dropdown">
+                            <button class="btn text-black fs-5 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Language
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <p class="fs-5 align-self-center my-2 me-2"><small>Clear</small></p>
+                    </div>
+
+                    <div
+                        class="d-flex justify-content-between align-items-center shadow-sm my-2 border w-100 bg-white py-1 mb-3 rounded-2">
+                        <div class="dropdown">
+                            <button class="btn text-black fs-5 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                categories
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <p class="fs-5 align-self-center my-2 me-2"><small>Clear</small></p>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between align-items-center shadow-sm my-2 border w-100 bg-white py-1 mb-3 rounded-2">
+                        <div class="dropdown">
+                            <button class="btn text-black fs-5 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Price
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <p class="fs-5 align-self-center my-2 me-2"><small>Clear</small></p>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between align-items-center shadow-sm my-2 border w-100 bg-white py-1 mb-3 rounded-2">
+                        <div class="dropdown">
+                            <button class="btn text-black fs-5 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More Filters
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <p class="fs-5 align-self-center my-2 me-2"><small>Clear</small></p>
+                    </div>
+                </div>
+
+                <div class="col-md-9 ms-5 p-2">
+                    <h2 class="fw-bolder">Events in Delhi-NCR</h2>
+                    <div class="d-flex flex-wrap">
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>Workshops</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>Concerts</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>StandUps</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>Workshops</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>ComiCon</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>Music</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>Conference</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>Movies</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>Arts & Crafts</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>MeetUps</small></p>
+                        <p class="lead fw-5 p-2 text-danger rounded-pill bg-white text-center shadow-sm border-secondary me-2 fw-medium"
+                            style="width: 100px;"><small>Public Event</small></p>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-md-3 ">
+                            <div class="card " style="width: 18rem;">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAxMCBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00489242-cptfplubea-portrait.jpg"
+                                    class="card-img-top " alt="..." >
+                                <div class="card-body">
+                                    <h4 class="fw-bolder my-0">Pottery Date</h4>
+                                    <p class="fs-5 my-0">Aurora Cafe , Khan Market</p>
+                                    <p class="text-secondary fs-6 my-0">Arts & Crafts</p>
+                                    <p class="fs-5 fw-bolder text-secondary my-0">₹499</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card " style="width: 18rem;">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyOCBNYXI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00455992-eqmxcbbral-portrait.jpg"
+                                    class="card-img-top " alt="..." >
+                                <div class="card-body">
+                                    <h4 class="fw-bolder my-0">Satrangi -Sonu Nigam</h4>
+                                    <p class="fs-5 my-0">New hall , Delhi</p>
+                                    <p class="text-secondary fs-6 my-0">Music</p>
+                                    <p class="fs-5 fw-bolder text-secondary my-0">₹799</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card " style="width: 18rem;">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAxIEFwcg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00484746-dcfseggwfw-portrait.jpg"
+                                    class="card-img-top " alt="..." >
+                                <div class="card-body">
+                                    <h4 class="fw-bolder my-0">Black Coffee</h4>
+                                    <p class="fs-5 my-0">Delhi NCR</p>
+                                    <p class="text-secondary fs-6 my-0">Concerts</p>
+                                    <p class="fs-5 fw-bolder text-secondary my-0">₹999</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card " style="width: 18rem;">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxOCBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00481956-ramnycrgby-portrait.jpg"
+                                    class="card-img-top " alt="..." >
+                                <div class="card-body">
+                                    <h4 class="fw-bolder my-0">Sanam India Tour</h4>
+                                    <p class="fs-5 my-0">Gurgoan</p>
+                                    <p class="text-secondary fs-6 my-0">Concert</p>
+                                    <p class="fs-5 fw-bolder text-secondary my-0">₹899</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2">
+                            <div class="card " style="width: 18rem;">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOSBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00468616-fpmujdjjbr-portrait.jpg"
+                                    class="card-img-top " alt="..." >
+                                <div class="card-body">
+                                    <h4 class="fw-bolder my-0">Pottery Date</h4>
+                                    <p class="fs-5 my-0">Aurora Cafe , Khan Market</p>
+                                    <p class="text-secondary fs-6 my-0">Arts & Crafts</p>
+                                    <p class="fs-5 fw-bolder text-secondary my-0">₹499</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2">
+                            <div class="card " style="width: 18rem;">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCAxMiBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00489099-trazscfakv-portrait.jpg"
+                                    class="card-img-top " alt="..." >
+                                <div class="card-body">
+                                    <h4 class="fw-bolder my-0">Pottery Date</h4>
+                                    <p class="fs-5 my-0">Aurora Cafe , Khan Market</p>
+                                    <p class="text-secondary fs-6 my-0">Arts & Crafts</p>
+                                    <p class="fs-5 fw-bolder text-secondary my-0">₹499</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2">
+                            <div class="card " style="width: 18rem;">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyMSBOb3Y%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00480995-htzputxnrm-portrait.jpg"
+                                    class="card-img-top " alt="..." >
+                                <div class="card-body">
+                                    <h4 class="fw-bolder my-0">Pottery Date</h4>
+                                    <p class="fs-5 my-0">Aurora Cafe , Khan Market</p>
+                                    <p class="text-secondary fs-6 my-0">Arts & Crafts</p>
+                                    <p class="fs-5 fw-bolder text-secondary my-0">₹499</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-2">
+                            <div class="card " style="width: 18rem;">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxMyBNYXIgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00459170-dfetvagpal-portrait.jpg"
+                                    class="card-img-top " alt="..." >
+                                <div class="card-body">
+                                    <h4 class="fw-bolder my-0">Pottery Date</h4>
+                                    <p class="fs-5 my-0">Aurora Cafe , Khan Market</p>
+                                    <p class="text-secondary fs-6 my-0">Arts & Crafts</p>
+                                    <p class="fs-5 fw-bolder text-secondary my-0">₹499</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid mt-4 p-4 text-center bg-danger text-white ">
+        <div class=" row">
+            <div class="col-3">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. itaque error. Est enim dolorum quos autem!
+                </p>
+            </div>
+            <div class="col-3">
+                <h3>Categories</h3>
+                <ul class="list-unstyled">
+                    <li>Concerts</li>
+                    <li>Public Events</li>
+                    <li>Comic Cons</li>
+                    <li>Movie</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Information</h3>
+                <ul class="list-unstyled">
+                    <li>About Us</li>
+                    <li>Policy</li>
+                    <li>Terms & Condtions</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Service</h3>
+                <ul class="list-unstyled">
+                    <li>My Account</li>
+                    <li>View Cart</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
